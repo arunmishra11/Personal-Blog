@@ -14,6 +14,19 @@ postform.addEventListener("submit", function (event) {
     title,
     content,
   };
+// Retrieve existing posts from localStorage (if any) or initialize an empty array
+let storedPosts = JSON.parse(localStorage.getItem("posts")) || [];
 
+// Add the new post to the existing array
+storedPosts.push(post);
+
+// Store the updated array of posts in localStorage
+localStorage.setItem("posts", JSON.stringify(storedPosts));
+
+// Clear the form
+postform.reset();
+
+// Redirect to the blogs page
+window.location.href = "./blog.html";
   
 });
