@@ -44,4 +44,48 @@
     margin-top: 10px;
   }
   
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid var(--border-color);
+    border-right: 5px solid var(--border-color);
+    margin-right: 2.5px;
+    min-width: 40%;
+    max-width: 40%;
+  }
   
+  #posts-button {
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    text-align: center;
+    font-size: 20px;
+    padding: 99px 50px;
+    background: var(--button-background);
+    color: var(--button-text-color);
+  }
+  
+  .form-section {
+    border-top: 5px solid var(--border-color);
+    border-left: 5px solid var(--border-color);
+    margin-left: 2.5px;
+  }
+  
+  .form-section h2,
+  .form-section form label {
+    color: var(--text-color);
+  }
+  
+  .submit {
+    background: var(--button-background);
+    color: var(--button-text-color);
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid var(--border-color);
+  }
